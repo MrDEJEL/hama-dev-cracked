@@ -5,8 +5,6 @@ from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 from mechanize import Browser
 
-manglist = requests.get('https://raw.githubusercontent.com/hamaiosdev/IDHAMA/main/id.txt')
-idd = manglist.text
 reload(sys)
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
